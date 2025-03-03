@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Options - Quizzik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Options</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="quizzes.html">Manage Quizzes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="optionForm">
+            <label for="questionId">Question ID:</label>
+            <input type="number" id="questionId" name="questionId" required>
+            <label for="optionText">Option Text:</label>
+            <input type="text" id="optionText" name="optionText" required>
+            <label for="isCorrect">Is Correct:</label>
+            <input type="checkbox" id="isCorrect" name="isCorrect">
+            <button type="submit">Create Option</button>
+        </form>
+        <div id="optionList">
+            <!-- List of options will be displayed here -->
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>

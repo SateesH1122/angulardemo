@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Quizzes - Quizzik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Manage Quizzes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="options.html">Manage Options</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="quizForm">
+            <label for="title">Quiz Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit">Create Quiz</button>
+        </form>
+        <div id="quizList">
+            <!-- List of quizzes will be displayed here -->
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
